@@ -110,7 +110,26 @@ console.log(emails);
 
 
 
-// Problem 2 list how many work for each company 
+// Problem 2 list names of companies
+let companies = [];
+
+runners.map(function (runner) {
+   companies.push(runner.company_name);
+}); 
 
 
-// Problem 3 list 
+console.log(companies);
+
+
+// Problem 3 list array of people with XS or S tshirts
+
+let smallPeople = [];
+runners.forEach(function(runner){
+    if (runner.shirt_size === "XS") {
+    smallPeople.push(runner);
+    } if (runner.shirt_size === "S") {
+        smallPeople.push(runner);
+    }
+});
+
+console.log(smallPeople);
