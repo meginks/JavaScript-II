@@ -23,14 +23,25 @@ function president() {
   president();
 } 
 
-console.log(president());
+console.log(president);
 
 
 
 // ==== Challenge 2: Create a counter function ====
-const counter = () => {
+const counter = () => { 
+  let count = 0; 
+  // return () => { ++count };
+  // console.log(count);
+  // }
   // Return a function that when invoked increments and returns a counter variable.
-};
+}; 
+
+const newCounter = counter();
+
+console.log(newCounter); 
+
+/// I'm really confused by this one.
+
 // Example usage: const newCounter = counter();
 // newCounter(); // 1
 // newCounter(); // 2
