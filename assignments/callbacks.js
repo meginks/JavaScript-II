@@ -65,12 +65,20 @@ console.log(multiplyNums(3, 5, answer));
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
-
+return cb(item, list);
 
 }
 
-function isItThere()
+function isItThere(x, y) {
+  if (y.includes(x) === true) {
+    console.log(`${x} is there!`);
+  } else {
+    console.log(`${x} is not there.`);
+  }
+}
 
+console.log(contains('pencil', items, isItThere));
+console.log(contains("Pencil", items, isItThere));
 
 /* STRETCH PROBLEM */
 
