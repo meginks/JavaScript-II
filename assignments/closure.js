@@ -1,6 +1,31 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+function president() {
+  const president = "President!";
+  console.log(`I am the ${president}`);
+  debugger;
+
+  function vicePresident() {
+    const vicePresident = "Vice President!";
+    console.log(`I am the ${vicePresident}`)
+    debugger;
+
+    function secretaryOfState() {
+      const secretaryOfState = "Secretary of State!";
+      console.log(`I am the ${secretaryOfState}`);
+      debugger;
+    }
+
+    secretaryOfState();
+  }
+
+  president();
+} 
+
+console.log(president());
+
+
 
 // ==== Challenge 2: Create a counter function ====
 const counter = () => {
