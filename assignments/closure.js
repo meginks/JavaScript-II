@@ -33,7 +33,7 @@ const counter = () => {
 let count = 0;
 
 function countUp() {
-  count += 1;
+  return count += 1;
 }
 
 countUp();
