@@ -29,16 +29,22 @@ console.log(president);
 
 // ==== Challenge 2: Create a counter function ====
 const counter = () => { 
-  let count = 0; 
-  // return () => { ++count };
-  // console.log(count);
-  // }
-  // Return a function that when invoked increments and returns a counter variable.
+
+let count = 0;
+
+function countUp() {
+  count += 1;
+}
+
+countUp();
 }; 
+  // Return a function that when invoked increments and returns a counter variable.
+// }; 
 
-const newCounter = counter();
+let newCounter = counter();
 
-console.log(newCounter); 
+console.log(newCounter);
+
 
 /// I'm really confused by this one.
 
