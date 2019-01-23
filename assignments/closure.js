@@ -1,11 +1,54 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+function president() {
+  const president = "President!";
+  console.log(`I am the ${president}`);
+  debugger;
+
+  function vicePresident() {
+    const vicePresident = "Vice President!";
+    console.log(`I am the ${vicePresident}`)
+    debugger;
+
+    function secretaryOfState() {
+      const secretaryOfState = "Secretary of State!";
+      console.log(`I am the ${secretaryOfState}`);
+      debugger;
+    }
+
+    secretaryOfState();
+  }
+
+  president();
+} 
+
+console.log(president);
+
+
 
 // ==== Challenge 2: Create a counter function ====
-const counter = () => {
-  // Return a function that when invoked increments and returns a counter variable.
-};
+const counter = () => { 
+
+// Return a function that when invoked increments and returns a counter variable.
+
+let count = 0;
+
+function countUp() {
+  count++;
+  return count;
+}
+
+return countUp();
+
+}; 
+
+const newCounter = counter();
+
+
+console.log(newCounter); 
+
+
 // Example usage: const newCounter = counter();
 // newCounter(); // 1
 // newCounter(); // 2
